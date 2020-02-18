@@ -4,7 +4,7 @@
     <span class="navbar-brand">HMPD</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_hmpd"
         aria-controls="navbar_hmpd" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span style="color:white; font-size:24px"><i class="fas fa-list-ul"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar_hmpd">
         <ul class="navbar-nav mr-auto">
@@ -27,7 +27,6 @@
                         <a class="dropdown-item" href="#">Bidang 4</a>
                         <a class="dropdown-item" href="#">Bidang 5</a>
                         <a class="dropdown-item" href="#">Bidang 6</a>
-                        <a class="dropdown-item" href="#">Bidang 7</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

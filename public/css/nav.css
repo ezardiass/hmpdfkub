@@ -1,6 +1,6 @@
 /* NAVBAR */
 nav {
-    height: 8vh;
+    height: 56px;
     display: block;
     position: fixed;
     width: 100%;
@@ -8,16 +8,16 @@ nav {
 }
 
 span.navbar-brand {
-    margin-left: 3vw;
+    margin-left: 1vw;
 }
 
 span.list {
-    margin-right: 3vw;
+    margin-right: 2vw;
 }
 
 .nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .navbar-brand,
@@ -32,10 +32,9 @@ span.list {
     color: var(--color-gray);
 }
 
-/* Footer */
-footer {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    padding-top: 1rem;
-    min-height: 3rem;
+/* Navbar Collapse */
+#navbar_hmpd.show{
+    transition: ease-out(0.5);
+    padding-top: 10px;
+    background-color: #c15851;
 }

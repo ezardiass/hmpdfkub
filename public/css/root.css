@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap");
-
 @font-face {
     font-family: "Cocogoose";
     src: url("../font/Cocogoose\ Pro\ Light-trial.ttf");
@@ -16,9 +14,12 @@
     --color-yellow: #f6c570;
 
     /* Font */
-    --font-header: 72px var(--color-red) "Bebas Neue", cursive;
+    --font-head: "Bebas Neue", cursive;
+    --font-head-size: 72px;
     --font-subhead: "Cocogoose";
+    --font-paragraph-size: 48px;
     --font-paragraph: "Montserrat", sans-serif;
+    --font-paragraph-size: 18px;
 }
 
 * {

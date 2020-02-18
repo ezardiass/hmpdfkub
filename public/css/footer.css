@@ -1,0 +1,62 @@
+footer {
+    height: 30vh;
+    line-height: 1.6;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#img-footer {
+    height: 15vh;
+    width: auto;
+}
+
+.container {
+    margin-bottom: 12px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fab {
+    font-size: 40px;
+    color: white;
+}
+
+.center {
+    display: flex;
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    justify-content: center;
+}
+
+.footer-head {
+    font-family: var(--font-subhead);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.footer-isi {
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+}
+
+.footer-isi a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-isi a:hover {
+    color: var(--color-red);
+    text-decoration: none;
+}

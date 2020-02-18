@@ -12,30 +12,30 @@
         <span class="my-4 my-md-0 list">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Beranda</a>
+                    <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link" href="/profil">Profil</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="/bidang-kerja" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Bidang Kerja</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="#">Bidang 1</a>
-                        <a class="dropdown-item" href="#">Bidang 2</a>
-                        <a class="dropdown-item" href="#">Bidang 3</a>
-                        <a class="dropdown-item" href="#">Bidang 4</a>
-                        <a class="dropdown-item" href="#">Bidang 5</a>
-                        <a class="dropdown-item" href="#">Bidang 6</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 1</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 2</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 3</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 4</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 5</a>
+                        <a class="dropdown-item" href="/bidang-kerja">Bidang 6</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="/aktifitas" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Aktifitas</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="#">Berita</a>
-                        <a class="dropdown-item" href="#">Galeri</a>
-                        <a class="dropdown-item" href="#">Merchandise</a>
+                        <a class="dropdown-item" href="/berita">Berita</a>
+                        <a class="dropdown-item" href="/galeri">Galeri</a>
+                        <a class="dropdown-item" href="/merchandise">Merchandise</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

@@ -1,0 +1,97 @@
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 50vh;
+}
+
+.header {
+    font-family: "Bebas Neue", cursive;
+    font-size: 72px;
+}
+
+.paragraph {
+    font-family: var(--font-paragraph);
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Jumbotron */
+#jumbotron {
+    margin-top: 8vh;
+    min-height: 92vh;
+    height: 100%;
+    background-image: url("../image/arkanan-07.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* About Us */
+#about_us .container {
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+}
+
+#about-us-left {
+    margin-top: 10vh;
+}
+
+#about-us-image {
+    height: 60vh;
+    width: auto;
+}
+
+/* What New */
+#what_new {
+    margin-top: 10vh;
+}
+
+#what_new #head{
+    margin-top: 10vh;
+    width: 20vw;
+    margin-bottom: 10vh;
+}
+
+#what_new #button{
+    margin-top: 5vh;
+    width: 10vw;
+    margin-bottom: 20vh;
+}
+
+#what_new .isi-button{
+    font-size: 32px;
+}
+
+/* Upcoming Event */
+#upcoming_event{
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+}
+
+#upcoming_event #head{
+    margin-top: 10vh;
+    width: 25vw;
+    margin-bottom: 10vh;
+}
+/* Bidang Kerja */
+#bidang_kerja{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#bidang_kerja #head{
+    margin-top: 10vh;
+    width: 20vw;
+    margin-bottom: 10vh;
+}
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+/* NAVBAR */
+nav {
+    height: 8vh;
+    display: block;
+    position: fixed;
+    width: 100%;
+    background: var(--color-red);
+}
+
+span.navbar-brand {
+    margin-left: 3vw;
+}
+
+span.list {
+    margin-right: 3vw;
+}
+
+.nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--color-white);
+    font-weight: 300;
+    font-family: var(--font-subhead);
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--color-gray);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 1rem;
+    min-height: 3rem;
+}

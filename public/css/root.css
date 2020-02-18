@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap");
+
+@font-face {
+    font-family: "Cocogoose";
+    src: url("../font/Cocogoose\ Pro\ Light-trial.ttf");
+}
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-cream: #f0ebe0;
+    --color-grey: #505668;
+    --color-red: #c15851;
+    --color-green: #8bbf9f;
+    --color-yellow: #f6c570;
+
+    /* Font */
+    --font-header: 72px var(--color-red) "Bebas Neue", cursive;
+    --font-subhead: "Cocogoose";
+    --font-paragraph: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}

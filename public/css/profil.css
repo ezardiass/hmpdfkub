@@ -1,5 +1,9 @@
 body{
     overflow-x: hidden;
+}
+
+#gambarLogo{
+    margin: auto;
     background-color: black;
 }
 
@@ -88,6 +92,8 @@ display: flex;
 #textBoxMisi {
     background-color: var(--textBoxBgColor);
     text-align: justify;
+    margin: auto;
+    /* height: 80vh; */
     font-size: var(--font-paragraph-size);
     padding: var(--paddingTB);
     border-radius: var(--borderTB);

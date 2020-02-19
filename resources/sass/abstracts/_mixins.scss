@@ -1,0 +1,41 @@
+@mixin absolute-center {
+    transform: translate(-50%, -50%) !important;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+//manager media query
+/*
+0-600px         phone
+600-900px       tablet potrait
+900-1200        tablet landscape
+[1200 -1800]    dektop (style default saat ini)
+1800 +          big desktop (smart tv dkk)
+*/
+
+// @mixin respon-phone {
+//     @media (max-width: 600px) { @content };
+// }
+
+// cara dibawah lebih baik
+
+/*
+VALUE PARAMETER:
+-   phone
+-   tb-pot      //tablet potrait
+-   tb-land     //tablet landscape
+-   big-d       //big desktop wkwk
+//dan kita menggunakan em daripada rem karena em dan rem pada media query sama sama menganut pada 
+//default font-size browser yang bisa diatur oleh user jadi kita menggunakan em (standarnya)
+//karena 1rem dan 1em sama sama 16px (16px adalah default browser font-size)
+maka logic = $breakpoint / 16px = ${hasil}em
+URUTAN Menambah media query: base + typography -> layout & grid -> page layout -> component
+*/
+
+@mixin respon($breakpoint) {
+    @if $breakpoint == phone {
+        // 37.5 == 600px / 16px = 37.5
+        @media only screen and (max-width: 37.5em) { @content }
+    }
+}

@@ -17,12 +17,18 @@
     --font-head: "Bebas Neue", cursive;
     --font-head-size: 72px;
     --font-subhead: "Cocogoose";
-    --font-paragraph-size: 48px;
+    --font-subhead-size: 48px;
     --font-paragraph: "Montserrat", sans-serif;
     --font-paragraph-size: 18px;
+    --font-header-mini-size:36px;
+    --font-paragraph-mini-size:12px;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
 }

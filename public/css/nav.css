@@ -3,7 +3,7 @@ nav {
     height: 56px;
     display: block;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background: var(--color-red);
 }
 

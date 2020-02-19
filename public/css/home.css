@@ -19,6 +19,37 @@ section {
     text-align: justify;
 }
 
+#cardCarouselMini{
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+    #cardCarousel{
+        display: none;
+    }
+
+    #cardCarouselMini{
+        display: block;
+    }
+
+    #about-us-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-us-left {
+        margin-top: 0px!important;
+    }
+    
+    .paragraph{
+        font-size: var(--font-paragraph-mini-size);
+    }
+    
+    .header{
+        font-size: var(--font-header-mini-size);
+    }
+}
+
 /* Jumbotron */
 #jumbotron {
     margin-top: 8vh;
@@ -37,13 +68,9 @@ section {
     margin-bottom: 20vh;
 }
 
-#about-us-left {
-    margin-top: 10vh;
-}
-
 #about-us-image {
-    height: 60vh;
-    width: auto;
+    height: auto;
+    width: 40vw;
 }
 
 /* What New */
@@ -51,47 +78,45 @@ section {
     margin-top: 10vh;
 }
 
-#what_new #head{
+#what_new #head {
     margin-top: 10vh;
-    width: 20vw;
     margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
-#what_new #button{
+#what_new #button {
     margin-top: 5vh;
-    width: 10vw;
     margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
 }
 
-#what_new .isi-button{
+#what_new .isi-button {
     font-size: 32px;
 }
 
 /* Upcoming Event */
-#upcoming_event{
+#upcoming_event {
     margin-top: 10vh;
     margin-bottom: 25vh;
 }
 
-#upcoming_event #head{
+#upcoming_event #head {
     margin-top: 10vh;
-    width: 25vw;
     margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
 }
 /* Bidang Kerja */
-#bidang_kerja{
+#bidang_kerja {
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
-#bidang_kerja #head{
+#bidang_kerja #head {
     margin-top: 10vh;
-    width: 20vw;
     margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-

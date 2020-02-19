@@ -1,0 +1,83 @@
+/*
+0-600px         phone
+600-900px       tablet potrait
+900-1200        tablet landscape
+[1200 -1800]    dektop (style default saat ini)
+1800 +          big desktop (smart tv dkk)
+*/
+/*
+VALUE PARAMETER:
+-   phone
+-   tb-pot      //tablet potrait
+-   tb-land     //tablet landscape
+-   big-d       //big desktop wkwk
+//dan kita menggunakan em daripada rem karena em dan rem pada media query sama sama menganut pada 
+//default font-size browser yang bisa diatur oleh user jadi kita menggunakan em (standarnya)
+//karena 1rem dan 1em sama sama 16px (16px adalah default browser font-size)
+maka logic = $breakpoint / 16px = ${hasil}em
+URUTAN Menambah media query: base + typography -> layout & grid -> page layout -> component
+*/
+.galeri__image-container {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  margin: 1.5625rem 0 0 0; }
+  @media only screen and (max-width: 37.5em) {
+    .galeri__image-container {
+      margin: 3.5rem 0 0 0; } }
+
+.galeri__custom-jumbotron {
+  background-color: black;
+  margin: 0;
+  text-align: center; }
+
+.galeri__custom-container {
+  background-color: black; }
+
+.galeri__photo-container {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.galeri__photo-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 6.25rem;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 37.5em) {
+    .galeri__photo-line {
+      padding: 0; } }
+
+.galeri__photo-image {
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: coral;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .galeri__photo-image {
+      margin-bottom: 1.25rem; } }
+
+.galeri__image {
+  width: auto;
+  height: 100%; }
+
+.galeri__custom-modal-content {
+  border-radius: 0.625rem;
+  overflow: hidden; }
+
+.galeri__custom-modal-dialog {
+  transform: translate(-50%, -50%) !important;
+  top: 50%;
+  left: 50%;
+  position: absolute; }
+  @media only screen and (max-width: 37.5em) {
+    .galeri__custom-modal-dialog {
+      width: 90vw;
+      margin: auto; } }
+
+.galeri__modal-image {
+  width: 100%; }

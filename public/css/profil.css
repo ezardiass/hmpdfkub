@@ -1,0 +1,129 @@
+body{
+    overflow-x: hidden;
+}
+
+#gambarLogo{
+    margin: auto;
+    
+  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.profil__logo {
+    width: 20vw;
+    height: auto;
+    margin-top: 12vh;
+}
+
+
+
+#header {
+    background-color: var(--main-bg-color);
+    justify-content: center;
+    color: var(--warnaHeader);
+    padding: var(--main-padding);
+    text-align: var(--center);
+    margin: auto;
+    width: fit-content;
+    font-family: var(--font-head);
+    font-size: var(--font-head-size);
+}
+
+#headerVisiMisi {
+    color: var(--warnaHeader);
+    width: fit-content;
+    font-family: var(--font-head);
+    font-size: var(--font-head-size);
+}
+
+#apaItuHMPD {
+    display: flex;
+    background-color: var(--textBoxBgColor);
+    text-align: justify;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 12vh;
+    height: auto;
+    font-size: var(--font-paragraph-size);
+    padding: var(--paddingTB);
+    border-radius: var(--borderTB);
+    font-family: var(--font-paragraph);
+}
+
+#textBoxVisi {
+    background-color: var(--textBoxBgColor);
+    text-align: justify;
+display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 60vw;
+    height: auto;
+    font-size: var(--font-paragraph-size);
+    padding: var(--paddingTB);
+    border-radius: var(--borderTB);
+    font-family: var(--font-paragraph);
+    justify-content: center;
+}
+
+#misiSemiHead {
+    background-color: var(--textBoxBgColor);
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 4vh;
+    width: fit-content;
+    height: auto;
+    padding: 2vh 2vw;
+    border-radius: var(--borderTB);
+    font-family: var(--font-paragraph);
+    font-size: var(--font-paragraph-size);
+}
+
+#pemisahMisi {
+    margin-left: -2vw;
+    margin-right: -2vw;
+}
+
+#textBoxMisi {
+    background-color: var(--textBoxBgColor);
+    text-align: justify;
+    margin: auto;
+    /* height: 80vh; */
+    font-size: var(--font-paragraph-size);
+    padding: var(--paddingTB);
+    border-radius: var(--borderTB);
+    font-family: var(--font-paragraph);
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.profil__pohon {
+    width: 90vw;
+    height: auto;
+}
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+    #apaItuHMPD, #textBoxVisi,#misiSemiHead , #textBoxMisi{
+        font-size: 12px;
+        width: fit-content;
+    }
+    #textBoxMisi{
+        margin-bottom: 10px;
+    }
+    #header, #headerVisiMisi{
+        font-size: 36px;
+    }
+ }
+
+ :root {
+    --textBoxBgColor: #F6C570;
+    --main-bg-color: black;
+    --warnaHeader: #C15851;
+    --main-padding: 2vh;
+    --center: center;
+    --paddingTB: 4vh 4vw;
+ 
+    --borderTB:15px;
+}

@@ -4,8 +4,11 @@ body{
 
 #gambarLogo{
     margin: auto;
-    
-  
+    background-color: black;
+}
+
+#gambarLogo{
+    margin: auto; 
     display: flex;
     justify-content: center;
     margin-bottom: 4vh;

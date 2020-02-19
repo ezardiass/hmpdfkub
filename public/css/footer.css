@@ -1,6 +1,9 @@
 footer {
     height: 30vh;
     line-height: 1.6;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
 }
 
 .footer-image {
@@ -14,26 +17,26 @@ footer {
     width: auto;
 }
 
-.container {
+footer .container {
     margin-bottom: 12px;
 }
 
-.col {
+footer .col {
     display: flex;
     justify-content: center;
 }
 
-.center {
+footer .center {
     margin-left: auto;
     margin-right: auto;
 }
 
-.fab {
+footer .fab {
     font-size: 40px;
     color: white;
 }
 
-.center {
+footer .center {
     display: flex;
     font-family: var(--font-paragraph);
     font-size: 16px;

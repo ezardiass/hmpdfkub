@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="{{asset("css/footer.css")}}">
 <footer>
     <div class="row">
         <div class="col-md-3">

@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="{{asset("css/nav.css")}}">
-
 <nav class="navbar fixed-top navbar-expand-md">
     <span class="navbar-brand">HMPD</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_hmpd"

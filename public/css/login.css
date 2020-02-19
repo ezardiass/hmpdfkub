@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#loginText{
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#login{
+    color:var(--color-green);
+justify-content: center;
+width: fit-content;
+font-family: var(--font-head);
+font-size: var(--font-head-size);
+
+}
+
+#loginBase{
+background-color: var(--color-yellow);
+border-radius: 15px;
+height: 40vh;
+width: auto;
+margin-bottom: 20px;
+}
+
+#labelText{text-align: center;
+justify-content: center;
+display: flex;
+justify-content: center;
+text-align: center;
+font-family: --font-paragraph;
+font-size: 20px;
+margin-top: 15px;
+    margin-bottom: 15px;}
+input{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+#but{
+    display: flex; 
+    justify-content: center;
+    margin-top: 4vh;
+}
+label{
+    font-family: --font-paragraph;
+    font-size: var(--font-paragraph-size);
+}

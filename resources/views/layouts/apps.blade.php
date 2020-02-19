@@ -18,6 +18,7 @@
     @include('inc.navbar')
     @yield('body')
     @include('inc.footer')
+    @yield('custom_script')
 </body>
 
 <script src="https://kit.fontawesome.com/5a91d5d98c.js" crossorigin="anonymous"></script>

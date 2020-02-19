@@ -1,0 +1,114 @@
+.galeri__image-container{
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  margin: 1.5625rem 0 0 0;
+
+  @include respon(phone){
+    margin: 3.5rem 0 0 0;
+  }
+}
+
+// .galeri__image-banner {
+//   // -webkit-background-size: cover;
+//   // -moz-background-size: cover;
+//   // -o-background-size: cover;
+//   // background-size: cover;
+// }
+
+
+.galeri__custom-jumbotron {
+  background-color: black;
+  margin: 0;
+  text-align: center;
+}
+
+.galeri__custom-container {
+    background-color: black;
+}
+
+.galeri__photo-container {
+    padding: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.galeri__photo-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 6.25rem;
+  flex-wrap: wrap;
+
+  @include respon(phone) {
+    padding: 0;
+  }
+}
+
+.galeri__photo-image {
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: coral;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include respon(phone){
+    margin-bottom: 1.25rem;
+  }
+}
+
+.galeri__image{
+  width: auto;
+  height: 100%;
+}
+
+.galeri__custom-modal-content {
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.galeri__custom-modal-dialog {
+  @include absolute-center;
+  @include respon(phone){
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.galeri__modal-image {
+  width: 100%;
+}
+
+
+// UNTUK CENTERING 
+// .modal.show .modal-dialog {
+//   -webkit-transform: none;
+//   transform: none;
+// }
+
+// .modal.fade .modal-dialog {
+//   transition: unset;
+//   transition: unset;
+//   transition: unset;
+//   -webkit-transform: unset;
+//   transform: unset;
+// }
+
+// .modal.fade .modal-dialog {
+//   transition: unset;
+//       transition-property: unset;
+//       transition-duration: unset;
+//       transition-timing-function: unset;
+//       transition-delay: unset;
+//   transition: transform unset;
+//       transition-property: unset;
+//       transition-duration: unset;
+//       transition-timing-function: unset;
+//       transition-delay: unset;
+//   transition: unset;
+//   -webkit-transform: unset;
+//       transform: unset;
+//   transform: unset;
+// }

@@ -1,11 +1,10 @@
 body{
     overflow-x: hidden;
+    background-color: black;
 }
 
 #gambarLogo{
-    margin: auto;
-    
-  
+    margin: auto; 
     display: flex;
     justify-content: center;
     margin-bottom: 4vh;
@@ -89,8 +88,6 @@ display: flex;
 #textBoxMisi {
     background-color: var(--textBoxBgColor);
     text-align: justify;
-    margin: auto;
-    /* height: 80vh; */
     font-size: var(--font-paragraph-size);
     padding: var(--paddingTB);
     border-radius: var(--borderTB);

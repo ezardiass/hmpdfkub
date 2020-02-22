@@ -1,0 +1,56 @@
+body {
+    background-color: var(--color-black);
+}
+
+#jumbotron {
+    margin-top: 8vh;
+    min-height: 92vh;
+    height: 100%;
+    background-image: url("../image/merch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#isi-merch {
+    min-height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#isi-merch .card {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#isi-merch .item-description{
+    text-align: justify;
+}
+
+.img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.item {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item-head{
+    font-family: var(--font-head);
+    font-size: 30px;
+}

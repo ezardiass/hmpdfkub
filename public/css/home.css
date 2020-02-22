@@ -10,12 +10,12 @@ section {
 
 .header {
     font-family: "Bebas Neue", cursive;
-    font-size: 72px;
+    font-size: var(--font-head-size);
 }
 
 .paragraph {
     font-family: var(--font-paragraph);
-    font-size: 20px;
+    font-size: var(--font-paragraph-size);
     text-align: justify;
 }
 

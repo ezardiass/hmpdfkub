@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProkersTable extends Migration
+class Proker extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,8 @@ class CreateProkersTable extends Migration
     {
         Schema::create('prokers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('judul');
-            $table->string('deskripsi');
+            $table->string('proker_title');
+            $table->string('proker-description');
             $table->integer('bidang_id');
             $table->timestamps();
         });

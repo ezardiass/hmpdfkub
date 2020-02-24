@@ -11,7 +11,7 @@
         <div class="jumbotron jumbotron-fluid galeri__custom-jumbotron">
             <div class="container galeri__custom-container">
                 <div class="galeri__photo-container">
-                    <div class="galeri__photo-line galeri__photo-line--1">
+                    <div class="galeri__photo-line">
                         <div class="galeri__photo-image">
                             <a data-target="#modalIMG" data-toggle="modal" href="#">
                                 <img class="galeri__image" src="{{URL::asset('/images/dummy_galeri-1.jpg')}}" alt="galeri image">
@@ -27,8 +27,6 @@
                                 <img class="galeri__image" src="{{URL::asset('/images/dummy_galeri-3.jpg')}}" alt="galeri image">
                             </a>
                         </div>
-                    </div>
-                    <div class="galeri__photo-line galeri__photo-line--2">
                         <div class="galeri__photo-image">
                             <a data-target="#modalIMG" data-toggle="modal" href="#">
                                 <img class="galeri__image" src="{{URL::asset('/images/dummy_galeri-4.jpg')}}" alt="galeri image">
@@ -44,8 +42,6 @@
                                 <img class="galeri__image" src="{{URL::asset('/images/dummy_galeri-1.jpg')}}" alt="galeri image">
                             </a>
                         </div>
-                    </div>
-                    <div class="galeri__photo-line galeri__photo-line--3">
                         <div class="galeri__photo-image">
                             <a data-target="#modalIMG" data-toggle="modal" href="#">
                                 <img class="galeri__image" src="{{URL::asset('/images/dummy_galeri-2.jpg')}}" alt="galeri image">

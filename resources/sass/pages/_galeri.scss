@@ -49,13 +49,13 @@
 .galeri__photo-image {
   width: 18.75rem;
   height: 18.75rem;
-  background-color: coral;
   border-radius: 0.625rem;
   overflow: hidden;
   cursor: pointer;
+  margin: 2.5rem 0;
 
   @include respon(phone){
-    margin-bottom: 1.25rem;
+    margin: 0 0 1.875rem 0;
   }
 }
 

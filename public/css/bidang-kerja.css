@@ -1,0 +1,153 @@
+/*
+0-600px         phone
+600-900px       tablet potrait
+900-1200        tablet landscape
+[1200 -1800]    dektop (style default saat ini)
+1800 +          big desktop (smart tv dkk)
+*/
+/*
+VALUE PARAMETER:
+-   phone
+-   tb-pot      //tablet potrait
+-   tb-land     //tablet landscape
+-   big-d       //big desktop wkwk
+//dan kita menggunakan em daripada rem karena em dan rem pada media query sama sama menganut pada 
+//default font-size browser yang bisa diatur oleh user jadi kita menggunakan em (standarnya)
+//karena 1rem dan 1em sama sama 16px (16px adalah default browser font-size)
+maka logic = $breakpoint / 16px = ${hasil}em
+URUTAN Menambah media query: base + typography -> layout & grid -> page layout -> component
+*/
+.bidang-kerja {
+  background-color: var(--color-black);
+  padding: 6.25rem 0 0 0; }
+  .bidang-kerja__header {
+    text-transform: uppercase;
+    font-family: var(--font-head);
+    font-size: var(--font-head-size);
+    color: var(--color-red); }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__header {
+        text-align: center; } }
+  .bidang-kerja__container {
+    margin: 6rem 0 0 0; }
+  .bidang-kerja__bidang-info {
+    margin: 0 0 2rem 0; }
+  .bidang-kerja__nama-bidang {
+    font-family: var(--font-subhead);
+    font-size: var(--font-subhead-size);
+    color: var(--color-red); }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__nama-bidang {
+        padding: 0 0 0 1rem; } }
+  .bidang-kerja__desc-container {
+    background-color: var(--color-yellow);
+    padding: 1rem 2rem;
+    text-align: justify;
+    border-radius: 1.25rem;
+    font-family: var(--font-paragraph);
+    font-size: var(--font-paragraph-size);
+    margin: 2rem 0 0; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__desc-container {
+        margin: 2rem 1rem;
+        font-size: 1rem;
+        padding: 1rem 1.25rem; } }
+  .bidang-kerja__desc {
+    margin-bottom: unset;
+    color: var(--color-black); }
+  .bidang-kerja__pengurus {
+    padding: 4rem 0 10rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__pengurus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0 6rem 0; } }
+  .bidang-kerja__pengurus-foto-container {
+    width: 20%;
+    height: 40vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 57% 20%; }
+    .bidang-kerja__pengurus-foto-container--1 {
+      background-image: url("/image/bidang-kerja/liani amelia.JPG"); }
+      @media only screen and (max-width: 37.5em) {
+        .bidang-kerja__pengurus-foto-container--1 {
+          margin: 0 0 4rem 0; } }
+    .bidang-kerja__pengurus-foto-container--2 {
+      background-image: url("/image/bidang-kerja/dhiya.JPG"); }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__pengurus-foto-container {
+        width: 80%;
+        height: 50vh; } }
+  .bidang-kerja__proker-heading {
+    font-family: var(--font-subhead);
+    color: var(--color-red);
+    font-size: var(--font-subhead-size); }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__proker-heading {
+        padding: 0 0 0 1rem; } }
+    .bidang-kerja__proker-heading--2 {
+      padding: 0 0 3rem 6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .bidang-kerja__proker-heading--2 {
+          padding: 0 0 2rem 1rem; } }
+  .bidang-kerja__proker-carousel-container {
+    background-color: var(--color-black);
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 90vw;
+    margin: 0 auto 8rem auto; }
+  .bidang-kerja__carousel-indicators {
+    bottom: 5%;
+    left: 60%; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__carousel-indicators {
+        bottom: 0;
+        margin-left: unset; } }
+    .bidang-kerja__carousel-indicators li {
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: #666;
+      border-radius: 50%; }
+  .bidang-kerja__carousel-inner {
+    width: 75%;
+    min-height: 70vh;
+    margin: auto;
+    background-color: var(--color-yellow);
+    border-radius: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__carousel-inner {
+        min-height: 50vh;
+        width: 95%; } }
+  .bidang-kerja__carousel-icon {
+    width: 3.125rem;
+    height: 3.125rem; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__carousel-icon {
+        width: 0;
+        height: 0; } }
+  .bidang-kerja__proker-container {
+    font-family: var(--font-paragraph);
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    border-radius: 1rem;
+    padding: 2rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__proker-container {
+        padding: 1rem 1.5rem; } }
+  .bidang-kerja__proker-title {
+    font-family: var(--font-subhead);
+    font-size: var(--font-subhead-size);
+    margin: 0 0 2rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__proker-title {
+        font-size: 1.8rem;
+        margin: 0 0 1rem 0; } }
+  .bidang-kerja__proker-desc {
+    text-align: justify;
+    font-size: var(--font-paragraph-size);
+    margin: 0 0 5rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .bidang-kerja__proker-desc {
+        font-size: 1rem; } }

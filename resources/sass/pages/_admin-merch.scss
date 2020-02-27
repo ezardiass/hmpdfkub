@@ -1,0 +1,123 @@
+.table .thead-dark th {
+    background-color: var(--color-grey);
+    border-color: var(--color-grey);
+}
+
+// MODAL
+
+.modal {
+    top: 30%;
+}
+
+.admin-merch {
+  background-color: var(--color-black);
+
+  &__container {
+    width: 100%;
+    background-color: var(--color-yellow);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    margin-top: calc(40px + 5rem);
+
+    @include respon(phone){
+        padding: 2rem 1rem;
+        margin-top: calc(40px + 3rem);
+    }
+  }
+
+  &__button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-family: var(--font-subhead);
+    font-size: var(--font-paragraph-size);
+    font-weight: 900;
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-black);
+
+    &:hover {
+        color: var(--color-white);
+    }
+
+    @include respon(phone){
+        font-size: .8rem;
+        -webkit-text-stroke-width: unset;
+        -webkit-text-stroke-color: var(--color-black);
+        font-weight: 400;
+        padding: .5rem 1rem;
+    }
+  }
+
+  &__title-container {
+      margin: 2rem 0 0 0;
+      
+      @include respon(phone){
+          justify-content: space-between;
+          padding: 1rem 0;
+          margin: 1rem 0 0 0;
+      }
+  }
+
+  &__title {
+      color: var(--color-red);
+      font-size: var(--font-subhead-size);
+      font-family: var(--font-subhead);
+      font-weight: 900;
+
+      @include respon(phone){
+        font-size: var(--font-paragraph-size);
+      }
+  }
+
+  &__table-container {
+      @include respon(phone){
+          font-size: .8rem;
+      }
+  }
+
+  &__table-image-container{
+      width: 40%;
+      height: 20vh;
+      background-color: var(--color-red);
+      overflow: hidden;
+
+      @include respon(phone){
+          width: 100%;
+          height: auto;
+      }
+  }
+
+  &__table-image{
+      width: 100%;
+      height: 100%;
+  }
+
+  &__table-button-container{
+      display: flex;
+      justify-content: space-around;
+
+      @include respon(phone){
+          flex-direction: column;
+      }
+  }
+
+  &__table-icon{
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+
+      @include respon(phone){
+          &:last-child{
+              width: 2rem;
+              height: 2rem;
+              padding: 1rem 0 0 0;
+          }
+      }
+  }
+
+
+  &__modal-title {
+      color: var(--color-black);
+  }
+}

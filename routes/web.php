@@ -19,12 +19,8 @@ Route::get('/profil', function () {
     return view('page.profil');
 });
 
-Route::get('/bidang-kerja', function () {
+Route::get('/bidang-kerja/{bidang-kerja}', function () {
     return view('page.bidang-kerja');
-});
-
-Route::get('/aktifitas', function () {
-    return view('page.aktifitas');
 });
 
 Route::get('/berita', function () {

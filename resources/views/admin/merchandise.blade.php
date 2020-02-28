@@ -1,106 +1,117 @@
 @extends('layouts.admin')
 
 @section('body')
-<link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('css/admin-merch.css') }}">
-<section class="admin-merch">
-    <div class="container">
-        <div class="admin-merch__container">
-            <a class="btn admin-merch__button" href="#" role="button">Dashboard</a>
-            <div class="admin-merch__title-container d-flex justify-content-between align-items-center">
-                <h1 class="admin-merch__title">Daftar Merch</h1>
-                <button class="btn admin-merch__button">Tambah +</button>
-            </div>
-            <div class="admin-merch__table-container">
-                <table class="table">
-                    <thead class="thead-dark admin-merch__thead-dark">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Gambar</th>
-                            <th scope="col">Judul</th>
-                            <th scope="col">Harga</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>
-                                <div class="admin-merch__table-image-container">
-                                    <img src="{{ URL::asset('images/topi.jpg') }}" alt="merch item" class="admin-merch__table-image">
-                                </div>
-                            </td>
-                            <td>Topi</td>
-                            <td>Rp. 100.000</td>
-                            <td>
-                                <div class="admin-merch__table-button-container">
-                                    <a class="admin-merch__table-button" data-toggle="modal" data-target="#adminDelete"><img src="{{ URL::asset('image/admin-icons/close.svg') }}" alt="close" class="admin-merch__table-icon"></a>
-                                    <a class="admin-merch__table-button" data-toggle="modal" data-target="#adminEdit"><img src="{{ URL::asset('image/admin-icons/edit.svg') }}" alt="edit" class="admin-merch__table-icon"></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>
-                                <div class="admin-merch__table-image-container">
-                                    <img src="{{ URL::asset('images/baju.jpg') }}" alt="merch item" class="admin-merch__table-image">
-                                </div>
-                            </td>
-                            <td>Baju</td>
-                            <td>Rp. 120.000</td>
-                            <td>
-                                <div class="admin-merch__table-button-container"> 
-                                    <a class="admin-merch__table-button" data-toggle="modal" data-target="#adminDelete"><img src="{{ URL::asset('image/admin-icons/close.svg') }}" alt="close" class="admin-merch__table-icon"></a>
-                                    <a class="admin-merch__table-button" data-toggle="modal" data-target="#adminEdit"><img src="{{ URL::asset('image/admin-icons/edit.svg') }}" alt="edit" class="admin-merch__table-icon"></a>    
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+<link rel="stylesheet" href="{{asset("css/admin-page.css")}}">
+<main>
+    <section id="admin-page">
+        <div class="container">
+            <div class="admin-wrapper">
+                <div class="admin-header">
+                    <div class="center">
+                        <span class="header">
+                            Merchandise
+                        </span>
+                    </div>
+                </div>
+
+                <div class="admin-content">
+                    <div id="right">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#tambah">
+                            Tambah
+                        </button>
+                    </div>
+
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Gambar</th>
+                                <th scope="col">Judul</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col" class="center">Aksi</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
+                                <td>Ganci</td>
+                                <td>Rp. 15.000</td>
+                                <td class="action-group">
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
+                                <td>Ganci</td>
+                                <td>Rp. 15.000</td>
+                                <td class="action-group">
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
+                                <td>Ganci</td>
+                                <td>Rp. 15.000</td>
+                                <td class="action-group">
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Modal -->
-<div class="modal fade" id="adminDelete" tabindex="-1" role="dialog" aria-labelledby="adminDeleteLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title admin-merch__modal-title" id="adminDeleteLabel">Hapus Merch</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="admin-merch__modal-isi"></p>
-    </div>
-    <div class="modal-footer admin-merch__modal">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-danger">Delete</button>
-    </div>
-</div>
-</div>
-</div>
+        <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addModal">Tambahkan Berita</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
 
-<div class="modal fade" id="adminEdit" tabindex="-1" role="dialog" aria-labelledby="adminEditLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title admin-merch__modal-title" id="adminEditLabel">Edit merch</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                            <div class="form-group">
+                                <label for="inputJudul">Judul</label>
+                                <input type="text" class="form-control" id="inputJudul" name="judul">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputJudul">Harga</label>
+                                <input type="number" class="form-control" id="inputJudul" name="harga">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputFile">Upload File</label>
+                                <input type="file" id="inputFile" name="file">
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Tambahkan">
+                        </div>
+
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-                <p class="admin-merch__modal-isi"></p>
-            </div>
-            <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-success">Edit</button>
-      </div>
-    </div>
-  </div>
-</div>
+        </div>
+
+    </section>
+</main>
 @endsection
-  

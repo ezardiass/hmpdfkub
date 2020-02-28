@@ -1,53 +1,104 @@
 @extends('layouts.admin')
 
 @section('body')
-<link rel="stylesheet" href="{{asset("css/admin-galeri.css")}}">
-    <main>
+<link rel="stylesheet" href="{{asset("css/admin-page.css")}}">
+<main>
+    <section id="admin-page">
         <div class="container">
-            <div class="dashboard">
-                <div class="headjudul">
-                    <h1><span class="badge badge-pill badge-success">Dashboard</span></h1>
-                </div>
-                <div class="row">
-                    <div class="col-9" id="daftargambar">
-                        <h2>Daftar Gambar</h2>
-                    </div>
-                    <div class="col" id="tombol">
-                        <button type="button" class="btn btn-success">Tambah +</button>    
+            <div class="admin-wrapper">
+                <div class="admin-header">
+                    <div class="center">
+                        <span class="header">
+                            Galeri
+                        </span>
                     </div>
                 </div>
-                <table class="table">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col" >Gambar</th>
-                        <th scope="col">Deskripsi</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td><img src="{{asset("images/dummy_galeri-1.jpg")}}" alt="" class="gambar"></td>
-                        <td >Lomba</td>
-                        <td>
-                            <button type="button" class="btn btn-link" id="silang"><i class="fas fa-times"></i></button>
-                        </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td><img src="{{asset("images/dummy_galeri-2.jpg")}}" alt="" class="gambar"></td>
-                        <td>Upacara</td>
-                        <td>
-                            <button type="button" class="btn btn-link"id="silang"><i class="fas fa-times"></i></button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                    </tr>
-                   </table>
+
+                <div class="admin-content">
+                    <div id="right">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#tambah">
+                            Tambah
+                        </button>
+                    </div>
+
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Gambar</th>
+                                <th scope="col">Deskripsi</th>
+                                <th scope="col">Aksi</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/dummy_galeri-1.jpg")}}" class="img"></td>
+                                <td>Pengmas</td>
+                                <td>
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/dummy_galeri-1.jpg")}}" class="img"></td>
+                                <td>Pengmas</td>
+                                <td>
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{asset("images/dummy_galeri-1.jpg")}}" class="img"></td>
+                                <td>Pengmas</td>
+                                <td>
+                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </main>
+
+        <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addModal">Tambahkan Galeri</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="inputJudul">Deskripsi</label>
+                                <input type="text" class="form-control" id="inputJudul" name="judul">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputFile">Upload File</label>
+                                <input type="file" id="inputFile" name="file">
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Tambahkan">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
 @endsection

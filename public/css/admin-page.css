@@ -1,0 +1,73 @@
+body{
+    background-color: var(--color-black);
+    font-family: var(--font-paragraph);
+}
+
+#admin-page{
+    margin-top: 15vh;
+}
+
+.admin-wrapper{
+    padding: 2rem;
+    background-color: var(--color-yellow);
+    border-radius: 10px;
+}
+
+.admin-header {
+    font-family: var(--font-head);
+    font-size: 64px;
+    color: var(--color-red);
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    font-family: var(--font-head);
+    font-size: 24px;
+}
+
+.modal .btn{
+    font-size: 20px;
+}
+
+#right{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+tbody{
+    background-color: var(--color-cream);
+}
+
+.img{
+    width: 30vw;
+}
+
+.action-group{
+    display: flex;
+    justify-content: center;
+}
+
+.action{
+    font-size: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.delete{
+    color: red;
+}
+
+.edit{
+    color: grey;
+}
+
+.check{
+    color: green;
+}
+
+
+

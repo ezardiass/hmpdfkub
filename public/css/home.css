@@ -40,6 +40,11 @@ section {
     #about-us-left {
         margin-top: 0px!important;
     }
+
+    #upcoming_event .card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     
     .paragraph{
         font-size: var(--font-paragraph-mini-size);
@@ -55,7 +60,7 @@ section {
     margin-top: 8vh;
     min-height: 92vh;
     height: 100%;
-    background-image: url("../image/arkanan-07.png");
+    background-image: url("../image/home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +98,7 @@ section {
 }
 
 #what_new .isi-button {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 /* Upcoming Event */
@@ -107,6 +112,10 @@ section {
     margin-bottom: 10vh;
     display: flex;
     justify-content: center;
+}
+
+#upcoming_event .card{
+    width: 20rem;
 }
 /* Bidang Kerja */
 #bidang_kerja {

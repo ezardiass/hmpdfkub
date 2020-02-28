@@ -10,7 +10,7 @@
         <span class="my-4 my-md-0 list">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Admin</a>
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/berita">Berita</a>

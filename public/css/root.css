@@ -15,11 +15,11 @@
 
     /* Font */
     --font-head: "Bebas Neue", cursive;
-    --font-head-size: 72px;
+    --font-head-size: 64px;
     --font-subhead: "Cocogoose";
-    --font-subhead-size: 48px;
+    --font-subhead-size: 32px;
     --font-paragraph: "Montserrat", sans-serif;
-    --font-paragraph-size: 20px;
+    --font-paragraph-size: 16px;
     --font-header-mini-size:36px;
     --font-paragraph-mini-size:12px;
 }

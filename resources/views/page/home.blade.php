@@ -228,7 +228,7 @@
     <section id="upcoming_event">
         <div class="container">
             <div class="mx-auto header" id="head">Upcoming Event</div>
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-around flex-wrap">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">

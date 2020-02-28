@@ -7,12 +7,18 @@ nav {
     background: var(--color-red);
 }
 
+@media (min-width: 0px) and (max-width: 767.98px) {
+    nav {
+        width: 100vw;
+    }
+}
+
 span.navbar-brand {
     margin-left: 1vw;
 }
 
 span.list {
-    margin-right: 2vw;
+    margin-right: 4vw;
 }
 
 .nav-item {

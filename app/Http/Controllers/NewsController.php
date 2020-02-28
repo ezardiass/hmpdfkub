@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\News;
-use Symfony\Component\Console\Input\Input;
 
 class NewsController extends Controller
 {
@@ -21,6 +20,7 @@ class NewsController extends Controller
         $news->image_path = "" . $image_title;
         $news->save();
     }
+
     public function editNews(Request $request)
     {
         $id = $request->input('id');
@@ -35,25 +35,26 @@ class NewsController extends Controller
         $news->image_path = "" . $image_title;
         $news->save();
     }
+
     public function deleteNews(Request $request, $id)
     {
         $news = News::find($id);
         $news->delete();
         return redirect('')->with('');
     }
-    public function viewLatestNews(Request $request)
-    {
-        $news = News::orderBy('created_at', 'desc')->limit(6)->get();
-        return view('')->with('', $news);
-    }
+
     public function viewAllNews(Request $request)
     {
         $news = News::orderBy('created_at', 'desc')->paginate(6);
-        return view('')->with('', $news);
+        return view('page.berita')->with('news', $news);
     }
+
     public function viewNewsByID(Request $request, $id)
     {
+        $recommendedNews = News::orderBy('created_at', 'desc')->limit(3)->get();
         $news = News::find($id);
-        return view('')->with('', $news);
+        return view('page.berita-detail')
+            ->with('news', $news)
+            ->with('recommendedNews', $recommendedNews);
     }
 }

@@ -13,7 +13,7 @@ class Proker extends Migration
      */
     public function up()
     {
-        Schema::create('prokers', function (Blueprint $table) {
+        Schema::create('proker', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('proker_title');
             $table->string('proker-description');
@@ -29,6 +29,6 @@ class Proker extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prokers');
+        Schema::dropIfExists('proker');
     }
 }

@@ -18,6 +18,7 @@ class CreateBidangKerjasTable extends Migration
             $table->string('name');
             $table->string('abbr');//Abbreviation
             $table->longtext('description');
+            $table->string('logo_img');
             $table->string('chief_name');
             $table->string('chief_img_path');
             $table->string('vice_name');

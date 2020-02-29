@@ -34,44 +34,35 @@
 
                         <tbody>
 
+                            @if (count($news)>0)
+                            @foreach ($news as $new)
                             <tr>
-                                <td>1</td>
-                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
-                                <td>Kebakaran</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam repellat
-                                    veritatis nisi odio eveniet vero, iusto dolorum illum quis nemo atque ea impedit
-                                    harum sed inventore repudiandae obcaecati distinctio!</td>
+                                <td>{{$new->id}}</td>
+                                <td><img src="{{$new->image_path}}" class="img"></td>
+                                <td>{{$new->news_title}}</td>
+                                <td>
+                                    <?php 
+                                    $temp = explode(" ",$new->news_content);
+                                    $desc = "";
+                                    for ($i=0; $i < 10; $i++) { 
+                                    $desc .= $temp[$i] . " ";    
+                                    }
+                                    echo $desc . "..."
+                                  ?>
+                                </td>
                                 <td class="action-group">
-                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
-                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
+                                    <a href="{{url("admin/berita/delete/")}}.{{$new->id}}" class="action delete"><i
+                                            class="fas fa-times"></i></a>
+                                    <a href="{{url("admin/berita/update/")}}.{{$new->id}}" class="action edit"><i
+                                            class="far fa-edit"></i></a>
                                 </td>
                             </tr>
-
+                            @endforeach
+                            @else
                             <tr>
-                                <td>1</td>
-                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
-                                <td>Kebakaran</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam repellat
-                                    veritatis nisi odio eveniet vero, iusto dolorum illum quis nemo atque ea impedit
-                                    harum sed inventore repudiandae obcaecati distinctio!</td>
-                                <td class="action-group">
-                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
-                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
-                                </td>
+                                <td colspan="5"><h3>News Not Found</h3></td>
                             </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <td><img src="{{asset("images/topi.jpg")}}" class="img"></td>
-                                <td>Kebakaran</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam repellat
-                                    veritatis nisi odio eveniet vero, iusto dolorum illum quis nemo atque ea impedit
-                                    harum sed inventore repudiandae obcaecati distinctio!</td>
-                                <td class="action-group">
-                                    <a href="" class="action delete"><i class="fas fa-times"></i></a>
-                                    <a href="" class="action edit"><i class="far fa-edit"></i></a>
-                                </td>
-                            </tr>
+                            @endif
 
                         </tbody>
                     </table>
@@ -89,22 +80,23 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form>
+                <form action="{{url("admin/berita/tambah")}}" method="POST" enctype="multipart/form-data">
                         <div class="modal-body">
-
+                            @csrf
                             <div class="form-group">
                                 <label for="inputJudul">Judul</label>
-                                <input type="text" class="form-control" id="inputJudul" name="judul">
+                                <input type="text" class="form-control" id="inputJudul" name="news_title">
                             </div>
 
                             <div class="form-group">
                                 <label for="inputDeskripsi">Deskripsi</label>
-                                <textarea type="text" class="form-control" id="inputDeskripsi" name="description"></textarea>
+                                <textarea type="text" class="form-control" id="inputDeskripsi"
+                                    name="news_content"></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label for="inputFile">Upload File</label>
-                                <input type="file" id="inputFile" name="file">
+                                <input type="file" id="inputFile" name="image">
                             </div>
 
                         </div>

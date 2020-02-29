@@ -9,58 +9,44 @@
             <div class="col-md-9" id="left">
                 <div class="wrapper">
                     <span class="header">
-                        Kebakaran
+                        {{$news->news_title}}
                     </span>
 
                     <div class="detail-image">
-                        <img src="{{asset('images/dummy_galeri-1.jpg')}}" class="img-fluid">
+                        <img src="{{$news->image_path}}" class="img-fluid">
                     </div>
 
                     <div class="news-tag">
-                        Jumat, 28 Februari 2020
+                        {{$news->created_at}}
                     </div>
 
                     <div class="isi-detail">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus esse corporis quae, mollitia
-                        et fugit blanditiis, voluptatem porro consequuntur aliquam eos suscipit ullam iste facere qui
-                        veniam! Eaque, vitae nobis.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus esse corporis quae, mollitia
-                        et fugit blanditiis, voluptatem porro consequuntur aliquam eos suscipit ullam iste facere qui
-                        veniam! Eaque, vitae nobis.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus esse corporis quae, mollitia
-                        et fugit blanditiis, voluptatem porro consequuntur aliquam eos suscipit ullam iste facere qui
-                        veniam! Eaque, vitae nobis.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus esse corporis quae, mollitia
-                        et fugit blanditiis, voluptatem porro consequuntur aliquam eos suscipit ullam iste facere qui
-                        veniam! Eaque, vitae nobis.
+                        {{$news->news_content}}
                     </div>
                 </div>
             </div>
             <div class="col-md-3" id="right">
 
+                @if (count($recommendedNews)>3)
+                @foreach ($recommendedNews as $news)
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Judul</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="card-link">Card link</a>
+                        <h5 class="card-title">{{$news->news_title}}</h5>
+                        <p class="card-text">
+                            <?php 
+                            $temp = explode(" ",$news->news_content);
+                            $desc = "";
+                            for ($i=0; $i < 4; $i++) { 
+                            $desc .= $temp[$i] . " ";    
+                            }
+                            echo $desc . "..."
+                        ?>
+                        </p>
+                        <a href="{{url("berita")}}/{{$new->id}}" class="card-link">Selengkapnya</a>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Judul</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="card-link">Card link</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Judul</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="card-link">Card link</a>
-                    </div>
-                </div>
+                @endforeach
+                @endif
             </div>
         </div>
     </div>

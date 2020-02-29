@@ -3,6 +3,7 @@
 @section('body')
 
 <link rel="stylesheet" href="{{asset("css/berita.css")}}">
+@if (count($latestNews)>4)
 <section id="news-carousel">
     <div id="jumbotron-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -103,6 +104,7 @@
         </div>
     </div>
 </section>
+@endif
 
 <section id="news-grid">
     <div class="container">
@@ -111,71 +113,33 @@
         </div>
         {{-- <div class="row">
             <div class="col-lg-10" id="left"> --}}
-                <div class="d-flex justify-content-around flex-wrap">
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="{{asset("images/dummy_galeri-3.jpg")}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+        <div class="d-flex justify-content-around flex-wrap">
+            @if (count($news)>0)
+            @foreach ($news as $new)
+            <div class="card">
+                <img src="{{$new->image_path}}" class="card-img-top" alt="{{$new->news_title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{$new->news_title}}</h5>
+                    <p class="card-text">
+                        <?php 
+                            $temp = explode(" ",$new->news_content);
+                            $desc = "";
+                            for ($i=0; $i < 12; $i++) { 
+                            $desc .= $temp[$i] . " ";    
+                            }
+                            echo $desc . "..."
+                        ?>
+                    </p>
+                    <a href="{{url("berita")}}/{{$new->id}}" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-            {{-- <div class="col-lg-2" id="right">
+            @endforeach
+            @else
+            <h1 class="header" style="color:white">No News Found</h1>
+            @endif
+        </div>
+    </div>
+    {{-- <div class="col-lg-2" id="right">
                 <div class="d-flex justify-content-around flex-wrap">
                     <div class="card">
                         <div class="card-body">
@@ -203,7 +167,6 @@
                     </div>
                 </div>
             </div> --}}
-        </div>
     </div>
 </section>
 

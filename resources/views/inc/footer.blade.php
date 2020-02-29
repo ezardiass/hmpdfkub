@@ -21,8 +21,8 @@
                 hmpdfkub@gmail.com
             </div>
         </div>
-        <div class="col-md-5 isi-col">
-            <div class="d-flex  flex-wrap">
+        <div class="col-md-4 isi-col">
+            <div class="d-flex flex-wrap">
                 <div class="footer-head">
                     Kontak Kami
                 </div>
@@ -40,9 +40,9 @@
                 Menu
             </div>
             <div class="footer-isi">
-                <a href="#">Database Mahasiswa</a><br>
-                <a href="#">Profil Fakultas Kedokteran</a><br>
-                <a href="#">Kontak Kami</a><br>
+                <a href="http://hipps.hmpdfkub.org/">Database Mahasiswa</a><br>
+                <a href="{{url("profil")}}">Profil Fakultas Kedokteran</a><br>
+                <a href="{{url("kontak-kami")}}">Kontak Kami</a><br>
             </div>
         </div>
     </div>

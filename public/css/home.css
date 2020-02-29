@@ -9,7 +9,7 @@ section {
 }
 
 .header {
-    font-family: "Bebas Neue", cursive;
+    font-family: var(--font-head);
     font-size: var(--font-head-size);
 }
 
@@ -128,4 +128,18 @@ section {
     margin-bottom: 10vh;
     display: flex;
     justify-content: center;
+}
+
+#bidang_kerja .col-md-4{
+    display: flex;
+    justify-content: center;
+}
+
+#bidang_kerja .card{
+    color: black;
+    width: 18rem;
+}
+
+#bidang_kerja .card-body{
+    min-height: 15rem;
 }

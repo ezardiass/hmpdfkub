@@ -53,13 +53,13 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
 .galeri__photo-image {
   width: 18.75rem;
   height: 18.75rem;
-  background-color: coral;
   border-radius: 0.625rem;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 2.5rem 0; }
   @media only screen and (max-width: 37.5em) {
     .galeri__photo-image {
-      margin-bottom: 1.25rem; } }
+      margin: 0 0 1.875rem 0; } }
 
 .galeri__image {
   width: auto;

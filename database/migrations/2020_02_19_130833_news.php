@@ -18,7 +18,6 @@ class News extends Migration
             $table->string('image_path');
             $table->string('news_title');
             $table->string('news_content');
-            $table->string('author');
             $table->timestamps();
         });
     }

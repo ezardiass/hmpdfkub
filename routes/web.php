@@ -11,30 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('page.home');
-});
+Route::get('/', 'HomeController@GetHomeView');
 
 Route::get('/profil', function () {
     return view('page.profil');
 });
 
-Route::get('/bidang-kerja', function () {
-    return view('page.bidang-kerja');
-});
+Route::get('/bidang-kerja/{id}', 'HomeController@GetBidangKerja');
 
-Route::get('/aktifitas', function () {
-    return view('page.aktifitas');
-});
 
-Route::get('/berita', function () {
-    return view('page.berita');
-});
+//Berita
+Route::get('/berita', 'NewsController@viewAllNews');
 
-Route::get('/berita/detail', function () {
-    return view('page.berita-detail');
-});
+Route::get('/berita/{id}', 'NewsController@viewNewsByID');
 
+//Galeri
 Route::get('/galeri', function () {
     return view('page.galeri');
 });
@@ -56,9 +47,16 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/admin/berita', function () {
-    return view('admin.berita');
-});
+//News
+Route::get('/admin/berita', 'NewsController@viewAdmin');
+
+Route::post('/admin/berita/tambah', 'NewsController@addNews');
+
+Route::get('/admin/berita/update/{id}', 'NewsController@viewUpdate');
+
+Route::post('/admin/berita/update/send/{id}', 'NewsController@editNews');
+
+Route::delete('/admin/berita/delete/{id}', 'NewsController@deleteNews');
 
 Route::get('/admin/event', function () {
     return view('admin.event');

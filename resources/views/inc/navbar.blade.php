@@ -16,19 +16,19 @@
                     <a class="nav-link" href="/profil">Profil</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/bidang-kerja" id="" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Bidang Kerja</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 1</a>
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 2</a>
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 3</a>
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 4</a>
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 5</a>
-                        <a class="dropdown-item" href="/bidang-kerja">Bidang 6</a>
+                        <a class="dropdown-item" href="/bidang-kerja/1">Bidang 1</a>
+                        <a class="dropdown-item" href="/bidang-kerja/2">Bidang 2</a>
+                        <a class="dropdown-item" href="/bidang-kerja/3">Bidang 3</a>
+                        <a class="dropdown-item" href="/bidang-kerja/4">Bidang 4</a>
+                        <a class="dropdown-item" href="/bidang-kerja/5">Bidang 5</a>
+                        <a class="dropdown-item" href="/bidang-kerja/6">Bidang 6</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/aktifitas" id="" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Aktifitas</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
                         <a class="dropdown-item" href="/berita">Berita</a>
@@ -37,11 +37,11 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="" id="" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Link</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
                         <a class="dropdown-item" href="#">Podcast</a>
-                        <a class="dropdown-item" href="#">Sambatkuy</a>
+                        <a class="dropdown-item" href="/sambat-kuy">Sambatkuy</a>
                     </div>
                 </li>
             </ul>

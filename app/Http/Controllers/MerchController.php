@@ -12,11 +12,6 @@ class MerchController extends Controller
         return view('page.merchandise')->with('merch', $merch);
     }
 
-    public function GetLatestMerch(Request $requset){
-        $merch = Merchandise::orderBy('created_at', 'desc')->limit(3)->get();
-        return view('page.home')->with('merch', $merch);
-    }
-
     public function AddMerch(Request $request){
         $merch = new Merchandise;
         $name = $request->input('name');

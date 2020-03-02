@@ -1,3 +1,16 @@
+body{
+    background-color: black;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
 .judul{
     color: var(--color-red);
     justify-content: center;
@@ -6,30 +19,21 @@
     font-size: var(--font-head-size);
     margin: auto;
 }
-.sub-judul{
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20rem;
+}
+
+.card-title{
     color: var(--color-grey);
     justify-content: center;
     width: fit-content;
-    font-family: var(--font-paragraph);
-    font-size: 32px ;
+    font-family: var(--font-head);
+    font-size: 40px;
     margin: auto;
+
 }
-#content-col{
-    padding: 20px 20px;
-}
-.content-isi{
-    background-color: var(--color-yellow);
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-.foto{
-    justify-content: center;
-    display: flex;
-    width: 340px;
-    height: 191.25px;
-    margin: auto;
-    border-radius: 15px;
-}
-body{
-    background-color: black;
-}
+
+

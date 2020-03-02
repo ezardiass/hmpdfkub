@@ -54,6 +54,27 @@ Pull the repo again
 git pull https://github.com/Akbarsn/hmpdfkub.git
 ```
 
+## How to use
+1. Pull this repo
+```bash
+git pull https://github.com/Akbarsn/hmpdfkub.git
+```
+2. When there is conflict, accept incoming changes
+3. Make an .env file by copying .env.example
+4. Generate key 
+```bash
+php artisan key:generate
+```
+5. Create database and set it environment in .env file
+6. Run the migration
+```bash
+php artisan migrate:fresh --seed
+```
+7. Run the application
+```bash
+php artisan serve
+```
+8. Test it
 
 
 
